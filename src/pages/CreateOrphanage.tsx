@@ -17,7 +17,7 @@ export default function CreateOrphanage() {
 
             <Map 
               center={[-27.2092052,-49.6401092]} 
-              style={{ width: '100%', height: 280 }}
+              style={{ width: '100%', height: 280 , zIndex:1}}
               zoom={15}
             >
               <TileLayer 
