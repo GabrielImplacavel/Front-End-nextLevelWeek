@@ -19,13 +19,13 @@ interface Orphanage {
 function OrphanagesMap(){
     const [orphanages, setOphanages] = useState<Orphanage[]>([]);
 
-    console.log(orphanages);
-
     useEffect( ()=>{
         api.get('orphanages').then(response => {
             setOphanages(response.data);
         });
     } , []);
+
+
     return(
         <div id="page-map">
             <aside>
